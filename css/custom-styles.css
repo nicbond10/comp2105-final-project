@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+/* baloo google font */
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
+
+/* base page stylings */
+body {
+    background-color: #673a10;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.box {
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+h1, h2{
+    text-align: center;
+    color: #1c508c;
+    font-family: 'Baloo', cursive;
+    margin-top: 20px;
+}
+
+.display-6 {
+    color: #fd8a25;
+}
+
+.navbar {
+    background-color: black;
+    box-shadow: 1px 1px 5px black;
+}
+
+.navbar-dark .nav .nav-link {
+    font-size: 14pt;
+    font-family: 'Baloo', cursive;
+}
+
+.nav-tabs .nav-link {
+    border-bottom-color: #fd8a25;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #fd8a25;
+}
+
+.navbar-dark .nav .nav-link:hover {
+    color: #fd8a25;
+    transition: 0.3s;
+}
+
+.navbar-dark .nav .active>.nav-link, .navbar-dark .nav .nav-link.active, .navbar-dark .nav .nav-link.show, .navbar-dark .nav .show>.nav-link {
+    color: #fd8a25;
+}
+
+.navbar-dark .nav .nav-link:focus, .navbar-dark .nav {
+    color: #fd8a2598;
+}
+
+a {
+    color: darkgray;
+}
+
+.btn {
+    border-color: #fd8a25;
+    background-color: #1c508c;
+    color: #fd8a25;
+    font-family: 'Baloo', cursive;
+    font-size: 14pt;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    border-color: #fd8a25;
+    background-color: #fd8a25;
+    color: #1c508c;
+    transition: 0.4s;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle  {
+    border-color: #fd8a25;
+    background-color: #fd8a25;
+    color: #1c508c;
+    transition: 0.3s;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle .border-color{
+    border-color: black;
+    background-color: #fd8a2598;
+    color: #fd8a25;
+}
+
+.btn-outline-success.focus, .btn-outline-success:focus {
+    box-shadow: none;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active:focus, .btn-outline-success:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-success.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.dropdown-item:hover {
+    background-color: #fd8a25;
+    transition: 0.3s;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #fd8a25;
+}
+
+.carousel-indicators .active {
+    background-color: #fd8a25;
+}
+
+#carouselExampleCaptions {
+    font-family: 'Baloo', cursive;
+}
+
+h3 {
+    text-shadow: 1px 1px 5px black;
+}
+
+.row {
+    margin: 20px 0
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.social {
+    text-align: center;
+}
+
+footer {
+    background-color: #1c508c;
+    padding: 15px;
+}
+
+footer span {
+    color: white;
+}
+
+figcaption {
+    text-align: center;
+    color: #1c508c;
+}
+
+.jumbotron {
+    background-color: black;
+    padding: 0;
+}
+
+/* set opacity and left margin for the jQuery animation */
+.top-header {
+    opacity: 0;
+    margin-left: -800px;
+}
+
+/* set opacity, width, and height for the jQuery animation */
+.fade-zoom {
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+}
+
+/* call the animation for the waggle button and make it infinite */
+.waggle-btn {
+    animation: waggle 1.5s 3s linear infinite;
+}
+
+/* stop the animation when user hovers on waggle button */
+.waggle-btn:hover {
+    animation: none;
+}
+
+/* animation class that is added and removed using Javascript when the user mouses onto 
+and off of the newsletter button */
+.sign-up-anim {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* call the animation for the main page header and make it infinite */
+.main-header {
+    animation: backNForth 10s ease-in-out infinite;
+}
+
+/* call the animation for the content image and make it infinite */
+.content-img {
+    animation: imgAnim 8s ease-in-out infinite;
+}
+
+/* call the animation to animate the fish svg at the bottom of the page
+and make it infinite */
+.moving-fish {
+    margin: 50px;
+    animation: fishSwim 5s ease-in-out infinite;
+}
+
+
+/* Page animations */
+
+/* waggle animation for deals button */
+@keyframes waggle {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: rotateZ(-10deg) scale(1.2);
+    }
+    60% {
+        transform: rotateZ(10deg) scale(1.2);
+    }
+    67.5% {
+        transform: rotateZ(-6deg) scale(1.2);
+    }
+    75% {
+        transform: rotateZ(6deg) scale(1.2);
+    }
+    82.5% {
+        transform: rotateZ(-4deg) scale(1.2);
+    }
+    85% {
+        transform: rotateZ(0) scale(1.2);
+    }
+    100% {
+        transform: rotateZ(0) scale(1);
+    }
+}
+
+/* bounce animation for newsletter button triggered with Javascript */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* main header move back and forth animation while changing opacity */
+@keyframes backNForth {
+    0% {
+        transform: translateX(-25px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-25px)
+    }
+}
+
+/* skew and rotate content image while changing opacity */
+@keyframes imgAnim {
+    0% {
+        transform: skew(0) rotate(0);
+    }
+    25% {
+        opacity: 0.8;
+        transform: skew(5deg) rotate(5deg);
+    }
+    50% {
+        opacity: 1;
+        transform: skew(0) rotate(0);
+    }
+    75% {
+        opacity: 0.8;
+        transform: skew(-5deg) rotate(-5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: skew(0) rotate(0);
+    }
+}
+
+/* make fish svg swim back and forth */
+@keyframes fishSwim {
+    0% {
+        transform: translateX(-75px);
+    }
+    33% {
+        transform: translateX(75px);
+    }
+    66% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: translateX(-75px);
+    }
+}
