@@ -137,7 +137,7 @@
                         </div>
                     </div> <!--end row -->
                     <div class="row justify-content-center">
-                        <button type="button" class="btn btn-primary btn-lg wiggle-btn">Shop Deals!</button>
+                        <button type="button" class="btn btn-primary btn-lg waggle-btn">Shop Deals!</button>
                     </div> <!-- end row -->
                 </div> <!-- end container -->
             </header>
