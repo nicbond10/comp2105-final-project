@@ -38,9 +38,10 @@
                     <a class="dropdown-item" href="#">Plants</a>
                     <a class="dropdown-item" href="#">Aquarium Kits</a>
                     <a class="dropdown-item" href="#">Other Items</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Saltwater
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -48,6 +49,7 @@
                     <a class="dropdown-item" href="#">Corals</a>
                     <a class="dropdown-item" href="#">Aquarium Kits</a>
                     <a class="dropdown-item" href="#">Other Items</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Deals</a>
